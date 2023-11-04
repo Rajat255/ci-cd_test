@@ -20,6 +20,7 @@ jobs:
 
       - name: Deploy to Apache
         run: |
+          pwd
           # Copy your built website to Apache's web root directory
           sudo cp -r ci-cd_test/* /var/www/html/
 
